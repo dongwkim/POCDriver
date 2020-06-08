@@ -1,0 +1,1 @@
+java -jar ./bin/POCDriver.jar -u 100 -n POCDB.secnet --updatefields 24 -l 100 --binary 20 -b 8 -i 0 -t $1 -c "mongodb+srv://secuser:welcomemongo@secnettps-nn9cc.mongodb.net/test?minPoolSize=256&maxPoolSize=512" -s 1

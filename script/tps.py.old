@@ -1,0 +1,26 @@
+#!/usr/bin/python
+import os
+import re
+import sys
+
+trial = sys.argv[1]
+binary = sys.argv[2]
+proc = sys.argv[3]
+
+tps = 0
+dir = binary + '_' + trial + '_trial_'+ proc + 'p'
+arr = os.listdir('./' + dir)
+filelist = []
+for file in arr:
+    if re.match(trial + '_[0-9].*' + binary + '.log',file):
+        filelist.append(file)
+        with open('./' + dir + '/' +file) as f:
+            lines = f.readlines()
+            for line in lines:
+                if 'updates per second on average' in line:
+                    tps = tps + int(line.split()[0])
+                    #print("accum:{}".format(tps))
+print(sorted(filelist))
+print("Sum of Avg TPS for {} trial {} is :  {}".format(trial ,binary, tps))
+
+

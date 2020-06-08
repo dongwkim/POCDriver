@@ -32,6 +32,7 @@ public class MongoWorker implements Runnable {
     private POCTestResults testResults;
     private int workerID;
     private int sequence;
+    private int sequence_u;
     private int numShards = 0;
     private Random rng;
     private ZipfDistribution zipf;
@@ -166,6 +167,7 @@ public class MongoWorker implements Runnable {
 
         // id
         sequence = getHighestID();
+        sequence_u = getHighestID();
 
         ReviewShards();
         rng = new Random();
@@ -269,7 +271,8 @@ public class MongoWorker implements Runnable {
                                 found = true;
                             }
                         }
-                    }
+	            }
+                    
                     if (!found) {
                         System.out.println("Cannot find failed op in batch!");
                     }
@@ -403,13 +406,16 @@ public class MongoWorker implements Runnable {
         Document change;
 
         if (key == null) {
-            int range = sequence * testOpts.workingset / 100;
-            int rest = sequence - range;
+            int range = sequence_u * testOpts.workingset / 100;
+            int rest = sequence_u - range;
 
+            //int recordno = rest + getNextVal(range);
             int recordno = rest + getNextVal(range);
 
             query.append("_id",
                     new Document("w", workerID).append("i", recordno));
+	    //Debugging for incresing _id.i when update
+	    //System.out.println(sequence_u + "," + workerID + "," + recordno);
         } else {
             query.append("_id", key);
         }
@@ -418,12 +424,14 @@ public class MongoWorker implements Runnable {
 
         if (updateFields == 1) {
             long changedfield = (long) getNextVal((int) testOpts.NUMBER_SIZE);
-            Document fields = new Document("fld0", changedfield);
+            Document fields = new Document("len", changedfield);
             change = new Document("$set", fields);
         } else {
             TestRecord tr = createNewRecord();
             tr.internalDoc.remove("_id");
             change = new Document("$set", tr.internalDoc);
+	    //Print Tr
+	    //System.out.println(query + "," +  change);
         }
 
         if (!testOpts.findandmodify) {
@@ -463,6 +471,9 @@ public class MongoWorker implements Runnable {
             System.out.println("Worker thread " + workerID + " Started.");
             while (testResults.GetSecondsElapsed() < testOpts.duration) {
                 c++;
+		if ( c > 62000){
+		    c = 2;
+		}
                 //Timer isn't granullar enough to sleep for each
                 if (testOpts.opsPerSecond > 0) {
                     double threads = testOpts.numThreads;
@@ -498,6 +509,7 @@ public class MongoWorker implements Runnable {
                     } else {
                         // An in place single field update
                         // fld 0 - set to random number
+                        // val1 - set to random binary
                         updateSingleRecord(bulkWriter);
                         if (!testOpts.findandmodify)
                             bulkops++;
@@ -546,6 +558,7 @@ public class MongoWorker implements Runnable {
 
                 if (c % testOpts.batchSize == 0) {
                     if (bulkops > 0) {
+			// stop inserting
                         flushBulkOps(bulkWriter);
                         bulkWriter.clear();
                         bulkops = 0;

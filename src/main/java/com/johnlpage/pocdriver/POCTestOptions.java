@@ -16,7 +16,7 @@ public class POCTestOptions {
 	int batchSize = 512;
 	int numFields = 10;
 	int depth = 0;
-	final long NUMBER_SIZE = 1000000;
+	final long NUMBER_SIZE = 10000000;
 	int textFieldLen = 30;
 	int numThreads = 4;
 	int threadIdStart = 0;
@@ -35,7 +35,7 @@ public class POCTestOptions {
 	boolean singleserver = false;
 	private String statsfile = "pocload.csv";
 	String databaseName = "POCDB";
-	String collectionName = "POCCOLL";
+	String collectionName = "UD";
 	String workflow = null;
 	boolean emptyFirst = false;
 	boolean printOnly = false;

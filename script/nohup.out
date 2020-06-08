@@ -1,0 +1,469 @@
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=mongoperf:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:763)
+	at com.johnlpage.pocdriver.LoadRunner.PrepareSystem(LoadRunner.java:55)
+	at com.johnlpage.pocdriver.LoadRunner.RunLoad(LoadRunner.java:136)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:46)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"java.lang.NumberFormatException: For input string: "10k"
+
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘7_-trial_1p’: File exists
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+Exception in thread "main" 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+java.lang.NumberFormatException: For input string: "30k"	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘9_-trial_1p’: File exists
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘11_-trial_1p’: File exists
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+Exception in thread "main" 	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)Exception in thread "main" 
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘7_-trial_2p’: File exists
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+Exception in thread "main" 	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘9_-trial_2p’: File exists
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘11_-trial_2p’: File exists
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+sleep: missing operand
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘30k_1_trial_3p’: File exists
+mkdir: cannot create directory ‘20k_1_trial_5p’: File exists
+mkdir: cannot create directory ‘10k_1_trial_7p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_7p’: File exists
+mkdir: cannot create directory ‘20k_1_trial_9p’: File exists
+mkdir: cannot create directory ‘10k_1_trial_11p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_9p’: File exists
+mkdir: cannot create directory ‘20k_1_trial_11p’: File exists
+mkdir: cannot create directory ‘10k_1_trial_13p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_15p’: File exists
+seq: invalid floating point argument: ‘10k_1_trial_19p’
+Try 'seq --help' for more information.
+mkdir: cannot create directory ‘30k_1_trial_15p’: File exists
+sh: 0: Can't open runall
+mkdir: cannot create directory ‘30k_1_trial_15p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_15p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_11p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_11p’: File exists
+sh: 0: Can't open runall
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "30k"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.johnlpage.pocdriver.POCTestOptions.<init>(POCTestOptions.java:179)
+	at com.johnlpage.pocdriver.POCDriver.main(POCDriver.java:24)
+mkdir: cannot create directory ‘30k_1_trial_21p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_15p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_11p’: File exists
+mkdir: cannot create directory ‘30k_1_trial_7p’: File exists
+Killed
+mkdir: cannot create directory ‘30k_1_trial_11p’: File exists

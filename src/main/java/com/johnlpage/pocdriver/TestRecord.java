@@ -8,6 +8,7 @@ import org.bson.Document;
 import org.bson.types.Binary;
 
 import de.svenjacobs.loremipsum.LoremIpsum;
+import org.apache.commons.lang3.RandomStringUtils;
 
 
 
@@ -15,12 +16,13 @@ import de.svenjacobs.loremipsum.LoremIpsum;
 
 public class TestRecord {
 
-	Document internalDoc;
+	Document internalDoc ;
+	//static Document internalDoc;
 	private Random rng;
 	private static ArrayList<ArrayList<Integer>> ar;
 	private static String loremText = null;
 
-	private static Binary blobData = null;
+	private Binary blobData = null;
 
 	private String CreateString(int length) {
 
@@ -103,6 +105,78 @@ public class TestRecord {
 		}
 
 		return 1; // Text
+		/**
+		if (fieldno == 0) {
+			return 1; // Text
+		}
+
+		if (fieldno == 1) {
+			return 0; //Integer
+		}
+
+		if (fieldno == 3) {
+			return 1; // Text
+		}
+
+		if (fieldno == 4) {
+			return 0; //Integer
+		}
+
+		if (fieldno == 5) {
+			return 1; // Text
+		}
+		if (fieldno == 6) {
+			return 1; // Text
+		}
+		if (fieldno == 7) {
+			return 1; // Text
+		}
+		if (fieldno == 8) {
+			return 1; // Text
+		}
+		if (fieldno == 9) {
+			return 1; // Text
+		}
+		if (fieldno == 10) {
+			return 1; // Text
+		}
+		if (fieldno == 11) {
+			return 1; // Text
+		}
+		if (fieldno == 12) {
+			return 1; // Text
+		}
+		if (fieldno == 13) {
+			return 0; // Integer
+		}
+		if (fieldno == 14) {
+			return 0; // Integer
+		}
+		if (fieldno == 15) {
+			return 0; // Integer
+		}
+		if (fieldno == 16) {
+			return 0; // Integer
+		}
+		if (fieldno == 17) {
+			return 0; // Integer
+		}
+		if (fieldno == 18) {
+			return 0; // Integer
+		}
+		if (fieldno == 19) {
+			return 0; // Integer
+		}
+		if (fieldno == 20) {
+			return 0; // Integer
+		}
+		if (fieldno == 21) {
+			return 0; // Integer
+		}
+		if (fieldno == 22) {
+			return 0; // Integer
+		}
+		**/
 	}
 
 	TestRecord(POCTestOptions testOpts) {
@@ -137,15 +211,46 @@ public class TestRecord {
 			rng.nextBytes(data);
 			blobData = new Binary(BsonBinarySubType.BINARY, data);
 		}
-
-		internalDoc.append("bin", blobData);
+		internalDoc.append("bin1", blobData);
+		blobData = null;
 	}
+
+/**
+ * @param seq	 The sequence for this document as a whole
+ * @param nFields The numbers of fields for this sub-document
+ * @return the number of new fields added
+ */
+private int addFields(Document doc, int seq, int nFields, int depth, int stringLength, long numberSize) {
+  int fieldNo = seq;
+  if (depth > 0) {
+    // we need to create nodes not leaves
+    int perLevel = (int) Math.pow(nFields, 1f / (depth + 1));
+    for (int i = 0; i < perLevel; i++) {
+      Document node = new Document();
+      doc.append("node" + i, node);
+      fieldNo += addFields(node, fieldNo, nFields / perLevel, depth - 1, stringLength, numberSize);
+    }
+  }
+
+
+  // Bestfit for Samsung Network
+
+  //int r = (int) Math.abs(Math.floor(rng.nextGaussian() * 1000000000));
+  //int r = (int) rng.nextInt(2147483647);
+
+  //String id_str = RandomStringUtils.randomAlphanumeric(256).toUpperCase();
+  //doc.append("id_str", fieldContent);
+  //doc.append("id_str", id_str);
+
+  return 1;
+}
 
 	/**
 	 * @param seq	 The sequence for this document as a whole
 	 * @param nFields The numbers of fields for this sub-document
 	 * @return the number of new fields added
 	 */
+/**
 	private int addFields(Document doc, int seq, int nFields, int depth, int stringLength, long numberSize) {
 		int fieldNo = seq;
 		if (depth > 0) {
@@ -189,6 +294,7 @@ public class TestRecord {
 		}
 		return fieldNo - seq;
 	}
+**/
 
     public List<String> listFields() {
         List<String> fields = new ArrayList<String>();

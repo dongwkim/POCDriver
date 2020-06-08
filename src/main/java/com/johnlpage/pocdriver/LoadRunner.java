@@ -8,6 +8,7 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Indexes;
 import com.mongodb.client.model.IndexOptions;
 import com.mongodb.client.model.UpdateOptions;
 import com.mongodb.client.result.UpdateResult;
@@ -43,9 +44,18 @@ public class LoadRunner {
 
         TestRecord testRecord = new TestRecord(testOpts);
         List<String> fields = testRecord.listFields();
+	/**
         for (int x = 0; x < testOpts.secondaryidx; x++) {
-            coll.createIndex(new Document(fields.get(x), 1));
+            coll.createIndex((fields.get(x), 1));
         }
+	**/
+	// Manaul Index Creation
+	//IndexOptions indexOptions = new IndexOptions().unique(true);
+        //coll.createIndex(Indexes.ascending("id_str"),indexOptions);
+        //coll.createIndex(Indexes.ascending("id_str"));
+        //coll.createIndex(Indexes.ascending("sysid"));
+        //coll.createIndex(Indexes.ascending("nf_instance","nf_type"));
+
         if (testOpts.fulltext) {
             IndexOptions options = new IndexOptions();
             options.background(true);
