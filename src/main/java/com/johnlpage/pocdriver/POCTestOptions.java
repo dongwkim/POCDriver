@@ -61,7 +61,7 @@ public class POCTestOptions {
 	boolean findandmodify=false;
 	int workingset = 100;
 	boolean helpOnly = false;
-	String connectionDetails = "mongodb://localhost:27017";
+	String connectionDetails = "mongodb+srv://admin:welcomemongo@swagstore.r8dos.gcp.mongodb.net/SECNET";
 	boolean fulltext;
 	
 	POCTestOptions(String[] args) throws ParseException
