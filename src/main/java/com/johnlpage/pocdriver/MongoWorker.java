@@ -7,6 +7,8 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.InsertOneModel;
 import com.mongodb.client.model.UpdateManyModel;
+import com.mongodb.client.model.UpdateOneModel;
+import com.mongodb.client.model.UpdateOptions;
 import com.mongodb.client.model.WriteModel;
 import org.apache.commons.math3.distribution.ZipfDistribution;
 import org.bson.Document;
@@ -167,7 +169,8 @@ public class MongoWorker implements Runnable {
 
         // id
         sequence = getHighestID();
-        sequence_u = getHighestID();
+        //sequence_u = getHighestID();
+        sequence_u = testOpts.totalDocs;
 
         ReviewShards();
         rng = new Random();
@@ -435,7 +438,11 @@ public class MongoWorker implements Runnable {
         }
 
         if (!testOpts.findandmodify) {
+            // Update Many 
             bulkWriter.add(new UpdateManyModel<Document>(query, change));
+            // Update One - Upsert
+            bulkWriter.add(new UpdateOneModel<Document>(query, change,new UpdateOptions().upsert(true)));
+            // Replace One
         } else {
             this.coll.findOneAndUpdate(query, change); //These are immediate not batches
         }
