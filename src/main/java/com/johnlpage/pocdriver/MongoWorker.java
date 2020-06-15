@@ -478,9 +478,11 @@ public class MongoWorker implements Runnable {
             System.out.println("Worker thread " + workerID + " Started.");
             while (testResults.GetSecondsElapsed() < testOpts.duration) {
                 c++;
+                /** 
 		if ( c > 62000){
 		    c = 2;
-		}
+        }
+        **/
                 //Timer isn't granullar enough to sleep for each
                 if (testOpts.opsPerSecond > 0) {
                     double threads = testOpts.numThreads;
