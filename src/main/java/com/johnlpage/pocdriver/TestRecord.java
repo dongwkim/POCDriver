@@ -181,10 +181,10 @@ public class TestRecord {
 
 	TestRecord(POCTestOptions testOpts) {
 		this(testOpts.numFields, testOpts.depth, testOpts.textFieldLen, testOpts.workingset, 0,
-				testOpts.NUMBER_SIZE, new int[]{testOpts.arraytop, testOpts.arraynext}, testOpts.blobSize);
+				testOpts.NUMBER_SIZE, new int[]{testOpts.arraytop, testOpts.arraynext}, testOpts.blobSize, testOpts.blobZero);
 	}
 
-	TestRecord(int nFields, int depth, int stringLength, int workerID, int sequence, long numberSize, int[] array, int binsize) {
+	TestRecord(int nFields, int depth, int stringLength, int workerID, int sequence, long numberSize, int[] array, int binsize, int blobzero) {
 		internalDoc = new Document();
 		rng = new Random();
 
@@ -206,13 +206,26 @@ public class TestRecord {
 			}
 			internalDoc.append("arr", ar);
 		}
+		/** 
 		if (blobData == null) {
 			byte[] data = new byte[binsize * 1024];
 			rng.nextBytes(data);
 			blobData = new Binary(BsonBinarySubType.BINARY, data);
 		}
+		**/
+		int zerosize = Math.round((float)(binsize)*blobzero/100*1024);
+		//System.out.println(zerosize);
+
+		//byte[] data_nz = new byte[(binsize - (binsize * blobzero /100)) * 1024];
+		byte[] data_nz = new byte[binsize*1024 -zerosize];
+        rng.nextBytes(data_nz);
+        //byte[] data_z = new byte[(binsize * blobzero /100) * 1024];
+        byte[] data_z = new byte[zerosize];
+        byte[] data = new byte[binsize * 1024];
+        System.arraycopy(data_nz, 0, data, 0, data_nz.length);
+		System.arraycopy(data_z, 0, data, data_nz.length, data_z.length);
+		blobData = new Binary(BsonBinarySubType.BINARY, data);
 		internalDoc.append("bin1", blobData);
-		blobData = null;
 	}
 
 /**

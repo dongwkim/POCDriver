@@ -47,6 +47,7 @@ public class POCTestOptions {
 	int updateFields=1;
 	int projectFields=0;
 	int totalDocs=0;
+	int blobZero=0;
 
 	/**
 	 * Control whether we show full stacktraces on error
@@ -106,6 +107,7 @@ public class POCTestOptions {
 		cliopt.addOption(null,"projectfields",true,"Number of fields to project in finds (default 0, which is no projection)");				
 		cliopt.addOption(null,"debug",false,"Show more detail if exceptions occur during inserts/queries");
 		cliopt.addOption(null,"totalDocs",true,"Total number of docs for upsert");
+		cliopt.addOption(null,"blobzero",true,"Percentage of BlobZeros");
 
 		CommandLine cmd = parser.parse(cliopt, args);
 		
@@ -310,5 +312,9 @@ public class POCTestOptions {
 		{
 			totalDocs = Integer.parseInt(cmd.getOptionValue("totalDocs"));
 		}
+		if(cmd.hasOption("blobzero"))
+        {
+                        blobZero = Integer.parseInt(cmd.getOptionValue("blobzero"));
+        }
 	}
 }

@@ -9,6 +9,7 @@ import com.mongodb.client.model.InsertOneModel;
 import com.mongodb.client.model.UpdateManyModel;
 import com.mongodb.client.model.UpdateOneModel;
 import com.mongodb.client.model.UpdateOptions;
+import com.mongodb.client.model.ReplaceOneModel;
 import com.mongodb.client.model.WriteModel;
 import org.apache.commons.math3.distribution.ZipfDistribution;
 import org.bson.Document;
@@ -439,10 +440,11 @@ public class MongoWorker implements Runnable {
 
         if (!testOpts.findandmodify) {
             // Update Many 
-            bulkWriter.add(new UpdateManyModel<Document>(query, change));
+            //bulkWriter.add(new UpdateManyModel<Document>(query, change));
             // Update One - Upsert
             bulkWriter.add(new UpdateOneModel<Document>(query, change,new UpdateOptions().upsert(true)));
             // Replace One
+            //bulkWriter.add(new ReplaceOneModel<Document>(query, change));
         } else {
             this.coll.findOneAndUpdate(query, change); //These are immediate not batches
         }
@@ -455,7 +457,7 @@ public class MongoWorker implements Runnable {
         arr[1] = testOpts.arraynext;
         return new TestRecord(testOpts.numFields, testOpts.depth, testOpts.textFieldLen,
                 workerID, sequence++, testOpts.NUMBER_SIZE,
-                arr, testOpts.blobSize);
+                arr, testOpts.blobSize, testOpts.blobZero);
     }
 
     private TestRecord insertNewRecord(List<WriteModel<Document>> bulkWriter) {
