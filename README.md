@@ -1,7 +1,8 @@
 
-**This is from [johnPages POCDriver]** (https://github.com/johnlpage/POCDriver) 
+**POC Workload Generator** 
 -------------------------------------------------------------------------------
 
+**[Forks from JohnPages POCDriver](https://github.com/johnlpage/POCDriver)**
 
 ### Add Options </br>
 ```
